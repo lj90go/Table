@@ -14,6 +14,8 @@
 		381341651AE2155F002BA82A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381341641AE2155F002BA82A /* Images.xcassets */; };
 		381341681AE2155F002BA82A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 381341661AE2155F002BA82A /* LaunchScreen.xib */; };
 		381341741AE2155F002BA82A /* TableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 381341731AE2155F002BA82A /* TableTests.m */; };
+		381341801AE216CB002BA82A /* TableSingle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3813417F1AE216CB002BA82A /* TableSingle.m */; };
+		381341831AE216FB002BA82A /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 381341821AE216FB002BA82A /* TableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		3813416D1AE2155F002BA82A /* TableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		381341721AE2155F002BA82A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381341731AE2155F002BA82A /* TableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableTests.m; sourceTree = "<group>"; };
+		3813417E1AE216CB002BA82A /* TableSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableSingle.h; path = table/TableSingle.h; sourceTree = "<group>"; };
+		3813417F1AE216CB002BA82A /* TableSingle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableSingle.m; path = table/TableSingle.m; sourceTree = "<group>"; };
+		381341811AE216FB002BA82A /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableCell.h; path = table/TableCell.h; sourceTree = "<group>"; };
+		381341821AE216FB002BA82A /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableCell.m; path = table/TableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		381341561AE2155F002BA82A /* Table */ = {
 			isa = PBXGroup;
 			children = (
+				3813417D1AE21577002BA82A /* table */,
 				3813415B1AE2155F002BA82A /* AppDelegate.h */,
 				3813415C1AE2155F002BA82A /* AppDelegate.m */,
 				3813415E1AE2155F002BA82A /* ViewController.h */,
@@ -117,6 +124,17 @@
 				381341721AE2155F002BA82A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3813417D1AE21577002BA82A /* table */ = {
+			isa = PBXGroup;
+			children = (
+				3813417E1AE216CB002BA82A /* TableSingle.h */,
+				3813417F1AE216CB002BA82A /* TableSingle.m */,
+				381341811AE216FB002BA82A /* TableCell.h */,
+				381341821AE216FB002BA82A /* TableCell.m */,
+			);
+			name = table;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				381341601AE2155F002BA82A /* ViewController.m in Sources */,
+				381341831AE216FB002BA82A /* TableCell.m in Sources */,
 				3813415D1AE2155F002BA82A /* AppDelegate.m in Sources */,
+				381341801AE216CB002BA82A /* TableSingle.m in Sources */,
 				3813415A1AE2155F002BA82A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
